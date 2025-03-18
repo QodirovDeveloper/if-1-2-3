@@ -350,6 +350,8 @@
 // console.log(`orta son ${mid}`);
 
 
+// ? task__________________________________________________________
+// ! if17. Yil berilgan (musbat butun son). Berilgan yilda nechta kun borligini aniqlovchi programma tuzilsin. Kabisa yilida 366 kun bor, kabisa bo'lmagan yilda 365 kun bor. Kabisa yil deb 4 ga karrali yillarga aytiladi. Lekin 100 ga karrali yillar ichida faqat 400 ga karrali bo'lganlari kabisa yil hisoblanadi. Masalan 300, 1300 va 1900 kabisa yili emas. 1200 va 2000 kabisa yili.
 
 
 
@@ -363,26 +365,7 @@
 
 
 
-
-
-
-
-
-// if13. A, B, C haqiqiy sonlari berilgan. Agar berilgan sonlar o`sish tartibida berilgan bo`lsa, sonlarni ikkilantiring, aks holda sonlarni ishorasi o'zgartirilsin. A, B, C ning qiymatlari ekranga chiqarilsin.
-
-// if14. A, B, C haqiqiy sonlari berilgan. Agar berilgan sonlar o'sish yoki kamayish tartibida berilgan bo`lsa, sonlarni ikkilantiring, aks holda sonlarni ishorasi o'zgartirilsin. A, B, C ning qiymatlari ekranga chiqarilsin.
-
-// if15. To`rtta butun son berilgan. Shu sonlarni uchtasi o`zaro teng, qolgan bittasini tartib raqami aniqlansin.
-
-// if16. x haqiqiy soni berilgan. Quyidagi funksiya hisoblansin.
-
-// agar x≤ 0 bo’lsa -x;
-// agar 0<x<2; x^2
-// agar x≥2 bo’lsa 4
-
-
-// if17. Yil berilgan (musbat butun son). Berilgan yilda nechta kun borligini aniqlovchi programma tuzilsin. Kabisa yilida 366 kun bor, kabisa bo'lmagan yilda 365 kun bor. Kabisa yil deb 4 ga karrali yillarga aytiladi. Lekin 100 ga karrali yillar ichida faqat 400 ga karrali bo'lganlari kabisa yil hisoblanadi. Masalan 300, 1300 va 1900 kabisa yili emas. 1200 va 2000 kabisa yili.
-
+// ! if18, case8, case9, case12
 // if18. 1-999 oraliqdagi sonlar berilgan. Berilgan sonni "ikki xonali juft son", "uch xonali toq son" va x.k. ekranga yozadigan programma tuzilsin.
 
 //
@@ -415,7 +398,11 @@
 
 
 // !__________________________________________________________________
+// !__________________________________________________________________
+// !__________________________________________________________________
 // ! QOSHIMCHA
+// !__________________________________________________________________
+// !__________________________________________________________________
 // !__________________________________________________________________
 // ? Uchta son berilgan. Dastur bu sonlarning eng katta, eng kichik, va o'rtacha sonlarini aniqlasin. Agar barcha sonlar teng bo'lsa, ""Barcha sonlar teng"" deb chiqaring.
 
@@ -460,3 +447,268 @@
 // }
 
 // console.log(`barchasi teng ${all_mid}`);
+
+
+// !Savol 1: Foydalanuvchidan yoshini so'rab, agar yoshi 18 dan kichik bo'lsa "Kirish mumkin emas", 18 dan katta yoki teng bo'lsa "Kirish mumkin" deb chiqaring.
+
+// let men1 = 17;
+// if (men1 >= 18 && 22 >= men1) {
+//   console.log("koledj yoki univer");
+// } else {
+//   console.log(`ha`);
+// }
+
+// ! Savol 2: Ikkita son berilgan. Agar ular teng bo'lsa "Sonlar teng", aks holda "Sonlar teng emas" deb chiqarilsin.
+
+// let num = 2;
+// let num2 = 2;
+// if (num == num2) {
+//   console.log('Sonlar teng');
+// } else {
+//   console.log('Sonlar teng emas');
+// }
+
+// ! Savol 3: Uchta son berilgan. Ularning eng kichigini toping.
+
+// let num = 1;
+// let num2 = 3;
+// let num3 = 2;
+// if (num < num2 && num < num3) {
+//   console.log(`kichik ${num}`);
+// } else if (num2 < num3) {
+//   console.log(`kichik ${num2}`);
+// } else {
+//   console.log(`lichik ${num3}`);
+// }
+
+// ! Savol 4: Foydalanuvchidan uchta sonni so'rab, ularning ortiqcha o'rtacha qiymatini toping (agar sonlar barcha teng bo'lsa, "Sonlar teng" deb chiqarilsin).
+
+// let num = 1;
+// let num2 = 2;
+// let num3 = 1;
+// if (num == num2 && num == num3) {
+//   console.log('sonlar teng');
+// } else {
+//   console.log('teng EMAS');
+// }
+
+// ! Savol 5: Yilning oyning raqamiga qarab, uning mavsumini aniqlang:
+// ! 3, 4, 5 oylarda "Bahor",
+// ! 6, 7, 8 oylarda "Yoz",
+// ! 9, 10, 11 oylarda "Kuz",
+// ! 12, 1, 2 oylarda "Qish".
+
+// const seasons = 3;
+// if (seasons >= 3 && seasons <= 5) {
+//   console.log("bahor");
+// } else if (seasons >= 6 && seasons <= 8) {
+//   console.log("yoz");
+// } else if (seasons >= 9 && seasons <= 11) {
+//   console.log("kuz");
+// } else if (seasons == 12 || seasons == 1 || seasons == 2) {
+//   console.log("qish");
+// }  else {
+//   console.log("not bro");
+// }
+
+// let num = 3;
+// let num2 = 4;
+// let num3 = 34;
+// if (num <= num2 && num <= num3) {
+//   console.log(`kichik ${num}`);
+// } else if (num2 <= num3 && num2 <= num) {
+//   console.log(`kichik ${num2}`);
+// } else if (num3 <= num && num3 <= num2) {
+//   console.log(`lichik ${num3}`);
+// } else {
+//   console.log("noto'g'ri");
+// }
+
+// let men = 20;
+// if (men > 18) {
+//   console.log('Kattalar');
+// } else if (men <= 18 && men >= 12) {
+//   console.log("O'smir");
+// } else if (men < 12) {
+//   console.log('Bolalar');
+// } else {
+//   console.log("notogri");
+// }
+
+// Calculator
+// Foydalanuvchidan 3 marta prompt orqali so'rov so'ralsin.
+// 1-sonni va 2-sonni keyin operatorni so'rasin.
+// operator + ga teng bo'lsa 1-son bilan 2-sonni qo'shib alertda chiqaring.
+// qolgan operatorlar ham huddi shunaqa..
+
+// let a = +prompt('son: ');
+// let b = +prompt('son: ');
+// let c = prompt('+, -, /, * ');
+// if (c == '+') {
+//   console.log(`${a} + ${b} = ${a + b}`);
+// } else if (c == '-') {
+//   console.log(`${a} - ${b} = ${a - b}`);
+// } else if (c == '/') {
+//   console.log(`${a} / ${b} = ${a / b}`);
+// } else if (c == '*') {
+//   console.log(`${a} * ${b} = ${a * b}`);
+// } else {
+//   console.log("noto'g'ri");
+// }
+
+// let oy = 13;
+// switch (oy) {
+//   case 12:
+//   case 1:
+//   case 2:
+//     console.log("qish");
+//     break;
+//   case 3:
+//   case 4:
+//   case 5:
+//     console.log("bohor");
+//     break;
+//   case 6:
+//   case 7:
+//   case 8:
+//     console.log("yoz");
+//     break;
+//   case 9:
+//   case 10:
+//   case 11:
+//     console.log("kuz");
+//     break;
+//   default:
+//     console.log("noto'g'ri");
+// }
+
+// let num1 = 2;
+// let num2 = 1;
+// let num3 = 3;
+// switch (true) {
+//   case num1 > num2 && num1 > num3:
+//     console.log(`katta num1 ${num1}`);
+//     break;
+//   case num2 > num1 && num2 > num3:
+//     console.log(`katta num2 ${num2}`);
+//     break;
+//   case num3 > num1 && num3 > num2:
+//     console.log(`katta num3 ${num3}`);
+//     break;
+//   default:
+//     console.log("not");
+//     break;
+// }
+
+// ! Tana harorati:
+// ! Foydalanuvchidan temperature (harorat) olinadi, va switch yordamida quyidagi javoblar chiqariladi:
+// ! Agar harorat 0 dan past bo'lsa: "Sovuq"
+// ! Agar harorat 0 dan 20 gacha bo'lsa: "Sovuq, lekin qulay"
+// ! Agar harorat 20 dan yuqori bo'lsa: "Issiq" Agar noto'g'ri qiymat kiritilsa: "Noto'g'ri harorat" deb chiqsin.
+
+// let tem = 1;
+// switch (true) {
+//   case tem <= 0:
+//     console.log("Sovuq");
+//     break;
+//   case tem > 0 && tem <= 20:
+//     console.log("Sovuq, lekin qulay");
+//     break;
+//   case tem >= 20:
+//     console.log("Issiq");
+//     break;
+//   default:
+//     console.log("Noto'g'ri harorat");
+//     break;
+// }
+
+// const num = 5;
+// const res = num > 0 ? "positive" : "negative";
+// console.log(res);
+
+
+// ! 1. Savol:
+// ! Agar age o'zgaruvchisi 18 yoki undan katta bo'lsa, foydalanuvchiga "Ruxsat berilgan" deb yozilsin. Aks holda, "Ruxsat berilmagan" deb yozilsin.
+
+// const age = 19;
+// const nat = age >= 18 ? "+ Ruxsat berilgan" : "- Ruxsat berilmagan";
+// console.log(nat);
+
+
+// ! 2. Savol:
+// ! Agar isWeekend o'zgaruvchisi true bo'lsa, foydalanuvchiga "Bugun dam olish kuni" deb yozilsin. Aks holda, "Bugun ish kuni" deb yozilsin.
+
+// const isWeekend = "true";
+// const nat = isWeekend == "true" ? "Bugun dam olish kuni uraaa!" : "Bugun ish kuni exxx!";
+// console.log(nat);
+
+
+// ! 3. Savol:
+// ! Agar temperature 20°C dan past bo'lsa, "Havo sovuq" deb yozilsin, aks holda "Havo iliq" deb yozilsin.
+
+// const tem = 10;
+// const nat = tem <= 20 ? "Havo sovuq" : "Havo iliq";
+// console.log(nat);
+
+
+// ! 4. Savol:
+// ! Agar userScore 50 dan katta yoki teng bo'lsa, "Qabul qilindi" deb yozilsin, aks holda "Qabul qilinmadi" deb yozilsin.
+
+// const userScore = 80;
+// const nat = userScore >= 50 ? "Qabul qilindi" : "Qabul qilinmadi";
+// console.log(nat);
+
+
+// ! 5. Savol:
+// ! Agar num1 va num2 teng bo'lsa, "Teng" deb yozilsin, aks holda "Farqli" deb yozilsin.
+
+// const num = 8000;
+// const num2 = 800;
+// const nat = num == num2 ? "Teng" : "Farqli";
+// console.log(nat);
+
+
+// ! 1. Savol:
+// ! 1 dan 5 gacha bo'lgan sonlarni konsolga chiqaradigan for tsiklini yozing.
+
+// for (let i = 1; i <= 5; i++) {
+//   console.log(i);
+// }
+
+
+// ! 3. Savol:
+// ! 1 dan 10 gacha bo'lgan sonlarning yig'indisini hisoblaydigan for tsiklini yozing.
+
+// let sum = 0;
+// for (let i = 1; i < 10; i++) {
+//   (sum += i);
+//   console.log(`sonning yig'indisi: ${sum} sonnig asli: ${i}`);
+// }
+
+
+
+// ! 1. Savol:
+// ! Agar n o'zgaruvchisi 10 ga teng yoki katta bo'lsa, 1 dan n gacha bo'lgan sonlarning yig'indisini hisoblang. Agar n 10 dan kichik bo'lsa, "n katta bo'lishi kerak" deb yozilsin.
+
+// let sum = 0;
+// for (let i = 0; i <= 10; i++) {
+//   (sum += i);
+//   console.log(`sonning yig'indisi: ${sum}`);
+//   if (i < 10) {
+//     console.log("n katta bo'lishi kerak");
+//   }
+// }
+
+
+// ! 2. Savol:
+// ! Biror ro'yxat  ichidagi barcha toq sonlarni konsolga chiqaradigan for tsiklini yozing.
+
+// for (let i = 0; i <= 10; i++) {
+//   if (i % 2 !== 0) {
+//     console.log(`toq sonlar: ${i}`);
+//   }
+// }
+
+// for (let i = 2; i < 10; i++) {
+
+// }
