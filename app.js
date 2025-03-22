@@ -375,6 +375,30 @@
 
 
 // ? task__________________________________________________________
+// !  ikkita son kiritishni so‘raydi va shu oraliqdagi toq sonlar yig‘indisini hisoblab ekranga chiqaradi.
+
+// let num1 = +prompt("1-son");
+// let num2 = +prompt("2-son");
+// let sum = 0;
+// let start;
+// let end;
+
+// if (num1 > num2) {
+//   start = num2;
+//   end = num1;
+// } else {
+//   start = num1;
+//   end = num2;
+// }
+// for (let i = start; i <= end; i++) {
+//   if (i % 2 == 1) {
+//     sum += i;
+//   }
+// }
+// console.log(sum);
+
+
+// ? task__________________________________________________________
 // ! Case8. Robot faqat to`rtta tomonga ko`cha oladi ("s"-shimol, "j"-janub, "q"-sharq, "g"-g'arb) va uchta raqamli kamanda: 0-harakni davom ettir, 1-chapga buril, 2-o`ngga buril. Y - robot yo`nalishi va K - kamanda berilgan. Berilgan kamanda bajarilgandan keying robot holatini aniqlovchi programma tuzilsin.
 
 // !  case9, case12
